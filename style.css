@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d9a88f;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: beige;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav a:active {
+    background-color: red;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 2px soild rgba(255, 255, 255, 0.6);
+    position: sticky;
+    top: 10px;
+
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+
+/*h1 {
+    color: #C1D2D6;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}*/
+
+ /* beige color pattern code for website */
+
+/*h2 {
+    
+    height: 20px;
+    width: 120px;
+    padding: 10Q;
+    margin: auto;
+    border: 1mm solid black;
+    border-radius: 10px
+    
+}*/
+
+.title {
+    color: antiquewhite;
+    margin: 0;
+    text-decoration: underline; 
+    text-align: center;  
+}
+
+.Big-title {
+    font-family: "Jacquard 12 Charted", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vm;
+}
+
+.section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 2px solid antiquewhite;
+}
+
+.details .points {
+    max-width: 900px;
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.small-header {
+    color: #C1D2D6;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.diagram-image {
+    float: top;
+    
+    height: 300px;
+    width: 500px;
+    margin: 15px;
+    border-radius: 10%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/*h3 {
+    color: #d9a88f;
+    color: rgb(217, 168, 143)
+
+}*/
+
+/* units of measurement for sizing and spacing your elements */
+#Date {
+    color: hsl(10, 50%, 80%);
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+}
+
+:root {
+    --primary-color: #6a7d8e;
+}
+
+/* Using the variable with a fallback */
+main,header {
+    background-color: #6a7d8e;
+    color: var(--primary-color, black); /* Fallback color is black */
+}
+
+.media {
+    display: grid;
+    place-items: center;
+    height: 30vh; /* Full height of the viewport */
+    background: #6a7d8e; /* Light grey background */
+}
+
+footer {
+    background-color: #6a7d8e;
+    padding: 0.25em 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*header {
+    border-style: solid;
+    border-color: #d9a88f;
+    border-width: 2px;
+    padding: 10px 15px;
+}*/
+header, section {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    header, footer {
+        padding: 30px 20px;
+    }
+    section {
+        padding: 50px 20px;
+    }
+}
