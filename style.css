@@ -19,7 +19,8 @@ nav > ul {
     padding: .5em;
     color: beige;
     text-decoration: none;
-    &:hover, &:focus {
+    &:hover
+    {
         color: tomato;
         background-color: beige;
     }
@@ -34,44 +35,19 @@ nav > ul {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 2px soild rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
     position: sticky;
-    top: 10px;
+    top: 1pc;
 
 }
 
 .main-nav li {
-    padding: 0 5%;
+    padding: 0 5vw;
 }
 
 
-/*h1 {
-    color: #C1D2D6;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 0px;
-    padding-left: 15px;
-}*/
-
- /* beige color pattern code for website */
-
-/*h2 {
-    
-    height: 20px;
-    width: 120px;
-    padding: 10Q;
-    margin: auto;
-    border: 1mm solid black;
-    border-radius: 10px
-    
-}*/
-
 .title {
-    color: antiquewhite;
+    color: color-mix(in srgb, red 50%, white 50%);
     margin: 0;
     text-decoration: underline; 
     text-align: center;  
@@ -81,7 +57,7 @@ nav > ul {
     font-family: "Jacquard 12 Charted", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 5vm;
+    font-size: 5rem;
 }
 
 .section {
@@ -93,7 +69,9 @@ nav > ul {
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-    border: 2px solid antiquewhite;
+    border-width: 2px ;
+    border-style: solid;
+    border-color: antiquewhite;
 }
 
 .details {
@@ -102,6 +80,7 @@ nav > ul {
     margin: 0 auto;
     padding: 0 1.5em;
     text-align: left;
+
 }
 
 ul li {
@@ -117,10 +96,9 @@ ul li {
 }
 
 .diagram-image {
-    float: top;
-    
-    height: 300px;
-    width: 500px;
+    float: none;
+    height: 4in;
+    width: 6in;
     margin: 15px;
     border-radius: 10%;
     position: relative;
@@ -154,7 +132,7 @@ main, header {
 div.media {
     display: grid;
     place-items: center;
-    height: 30vh; /* Full height of the viewport */
+    height: 50vh; /* Full height of the viewport */
     background: #6a7d8e; /* Light grey background */
     
 }
@@ -168,13 +146,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 100px; 
 }
-/*header {
-    border-style: solid;
-    border-color: #d9a88f;
-    border-width: 2px;
-    padding: 10px 15px;
-}*/
+
+
 header, section {
     padding: 20px;
 }
@@ -189,8 +164,9 @@ header, section {
     }
 } 
 
+
 input[list] {
-    color: red;
+    color: color(display-p3 0.5 0.2 0.1 / 0.8);;
 }
 
 h3 ~ ul {
@@ -207,5 +183,10 @@ h1:has(+ h4) {
     border-bottom: 2px solid #d9a88f;
 }
 
-
+.small-image {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
 
