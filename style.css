@@ -6,7 +6,7 @@
     color: #d9a88f;
 }
 
-.nav ul {
+nav > ul {
     margin: 0;
 }
 
@@ -19,14 +19,15 @@
     padding: .5em;
     color: beige;
     text-decoration: none;
+    &:hover, &:focus {
+        color: tomato;
+        background-color: beige;
+    }
 }
 
-.nav a:hover {
-    background-color: rgba(255, 255, 255, 0.6);
-}
 
 .nav a:active {
-    background-color: red;
+    background-color: tomato;
 }
 
 .main-nav {
@@ -95,11 +96,18 @@
     border: 2px solid antiquewhite;
 }
 
-.details .points {
+.details {
     max-width: 900px;
     min-width: 800px;
     margin: 0 auto;
     padding: 0 1.5em;
+    text-align: left;
+}
+
+ul li {
+    margin: 0 auto;
+    padding: 0 1.5em;
+    text-align: left;
 }
 
 .small-header {
@@ -134,20 +142,21 @@
 }
 
 :root {
-    --primary-color: #6a7d8e;
+    --primary-color: #d9a88f;;
 }
 
 /* Using the variable with a fallback */
-main,header {
+main, header {
     background-color: #6a7d8e;
-    color: var(--primary-color, black); /* Fallback color is black */
-}
+    color: var(--primary-color, black);} /* Fallback color is black */
 
-.media {
+
+div.media {
     display: grid;
     place-items: center;
     height: 30vh; /* Full height of the viewport */
     background: #6a7d8e; /* Light grey background */
+    
 }
 
 footer {
@@ -170,6 +179,7 @@ header, section {
     padding: 20px;
 }
 
+/* Media queries for responsive layout */
 @media (min-width: 768px) {
     header, footer {
         padding: 30px 20px;
@@ -177,4 +187,25 @@ header, section {
     section {
         padding: 50px 20px;
     }
+} 
+
+input[list] {
+    color: red;
 }
+
+h3 ~ ul {
+    margin: 0;
+    
+}
+
+h3 + ul {
+    font-size: xx-large;
+}
+
+
+h1:has(+ h4) {
+    border-bottom: 2px solid #d9a88f;
+}
+
+
+
